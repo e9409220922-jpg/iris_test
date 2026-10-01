@@ -24,7 +24,7 @@ st.title("Iris 數據互動圖表 PROMAX")
 # 修改連線字串並加入 ssl_ca 參數
 # "mysql+mysqlconnector://avnadmin:密碼@Aiven主機:Port/iris"
 engine = create_engine(
-    "mysql+mysqlconnector://avnadmin:AVNS_5X7_DINH0sxIW2qigAq@mysql-uto-e9409220922-1cbb.a.aivencloud.com:26541/iris",
+    "mysql+mysqlconnector://avnadmin:AVNS_Wq4jjvdgcKPfiwCdNUy@mysql-uto-e9409220922-1cbb.a.aivencloud.com:26541/iris",
     connect_args={'ssl_ca': 'ca.pem'}
 )
 
