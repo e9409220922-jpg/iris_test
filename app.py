@@ -24,7 +24,14 @@ st.title("Iris 數據互動圖表 PROMAX")
 db_url = st.secrets["DATABASE_URL"]
 
 # 進行原本的 MySQL 連線
-engine = create_engine(db_url)
+ssl_args = {
+    "ssl": {
+        "ca": "ca.pem" 
+    }
+}
+
+# 建立 SQLAlchemy 引擎，並傳入 SSL 參數
+engine = create_engine(db_url, connect_args=ssl_args)
 
 
 # 載入資料
