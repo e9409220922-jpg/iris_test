@@ -17,10 +17,11 @@ st.title("Iris 數據互動圖表 PROMAX")
 
 # 建立 SQLAlchemy 引擎
 # 載入 .env 檔案中的變數
-load_dotenv("pass.env")
+# load_dotenv("pass.env")
 
 # 讀取連線字串
-db_url = os.getenv("DATABASE_URL")
+# db_url = os.getenv("DATABASE_URL")
+db_url = st.secrets["DATABASE_URL"]
 
 # 進行原本的 MySQL 連線
 engine = create_engine(db_url)
