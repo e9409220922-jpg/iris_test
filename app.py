@@ -4,6 +4,7 @@ import streamlit as st
 from sqlalchemy import create_engine
 import plotly.express as px
 import pandas as pd
+import ssl
 
 # 網頁設定 (要在最前面)
 st.set_page_config(page_title = "Iris Dashboard",
